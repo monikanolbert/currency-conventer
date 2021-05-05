@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KALKULATOR WALUT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" />
+    <script defer src="js/script.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500&display=swap" rel="stylesheet">
+</head>
+
+<body class="body">
+
+    <header class="header">KALKULATOR WALUT
+    </header>
+
+    <main>
+        <form class="form js-form">
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Kalkulator</legend>
+                <p>
+                    <label>
+                        <span class="form__labelText">
+                            Kwota*:
+                        </span>
+                        <input class="form__field js-amountPln" type="number" name="amountPln"
+                            placeholder="wpisz kwotę w PLN" step="0.01" min="0.01" autofocus required>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <span class="form__labelText">
+                            Przelicz na*:
+                        </span>
+                        <select class="form__field form__field--select js-currency" name="currency">
+                            <option value="4.57">EUR</option>
+                            <option value="3.77">USD</option>
+                        </select>
+                    </label>
+                </p>
+                <p class="form__text">
+                    *pola obowiązkowe
+                </p>
+                <p>
+                    <button class="form__button js-convert">Przelicz!</button>
+                    <button class="form__button" type="reset">Wyczyść formularz</button>
+                </p>
+                <p>
+                    Wynik: <strong class="js-result">N/A</strong>
+                </p>
+            </fieldset>
+        </form>
+        <form action="https://www.google.com/search">
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Inne</legend>
+                <p>
+                    Sprawdź również inne kalkulatory walut:
+                    <input class="form__field" name="q" value="kalkulator walut" readonly>
+                    <button class="form__button">Szukaj</button>
+                </p>
+            </fieldset>
+        </form>
+
+    </main>
+
+</body>
+
+</html>

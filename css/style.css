@@ -14,6 +14,6 @@ html {
     margin: 0 auto;
     padding: 0 20px;
     line-height: 1.5;
-    background-image: url(../images/background_money.jpg);
+    background-image: url("https://github.com/monikanolbert/currency-conventer/blob/main/images/background_money.jpg?raw=true");
     background-size: 1800px;
 }

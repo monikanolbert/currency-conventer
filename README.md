@@ -10,3 +10,10 @@ Using the currency conventer you can convert PLN to EUR or USD. You can also che
 
 Check how to use the currency conventer:
 ![Instruction](https://github.com/monikanolbert/currency-conventer/blob/main/gifs/animation.gif?raw=true)
+
+## Used technologies
+
+* HTML
+* CSS
+* BEM
+* ES6+ features
